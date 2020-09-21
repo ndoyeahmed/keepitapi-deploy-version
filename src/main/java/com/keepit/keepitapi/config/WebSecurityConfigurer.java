@@ -51,7 +51,6 @@ public class WebSecurityConfigurer extends WebSecurityConfigurerAdapter {
                 .antMatchers(HttpMethod.POST, "/api/retrieve-email").permitAll()
                 .antMatchers(HttpMethod.POST, "/api/change-password").permitAll()
                 .antMatchers(HttpMethod.GET, "/swagger-ui.html").permitAll()
-                .antMatchers(HttpMethod.GET, "/v2/api-docs").permitAll()
                 //Route pour tester l'audit
                 .antMatchers(HttpMethod.POST, "/module").permitAll()
                 .antMatchers("/socket/**").permitAll()
